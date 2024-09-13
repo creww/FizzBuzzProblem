@@ -17,18 +17,10 @@ repositories {
 }
 
 dependencies {
-    // This dependency is used by the application.
-    implementation(libs.guava)
-}
-
-testing {
-    suites {
-        // Configure the built-in test suite
-        val test by getting(JvmTestSuite::class) {
-            // Use JUnit4 test framework
-            useJUnit("4.13.2")
-        }
-    }
+    // junit
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.11.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.11.0")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.11.0")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -42,3 +34,8 @@ application {
     // Define the main class for the application.
     mainClass = "org.example.App"
 }
+
+tasks.withType<Test> {
+    useJUnitPlatform()
+}
+

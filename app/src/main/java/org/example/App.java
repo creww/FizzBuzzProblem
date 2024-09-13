@@ -4,11 +4,16 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+
+        FizzBuzzEngine fizzBuzzEngine = new FizzBuzzEngine();
+
+        // STDINから値を受け取り、FizzBuzzをSTDOUTに出力する。Ctl + Cで終了
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        while (scanner.hasNext()) {
+            int value = scanner.nextInt();
+            System.out.println(fizzBuzzEngine.execute(value));
+        }
     }
 }
