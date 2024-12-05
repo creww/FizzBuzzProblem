@@ -64,10 +64,10 @@ FizzBuzz問題のリファクタリングでリファクタリングしたFizzBu
 FizzBuzz問題のWeb APIをセキュア化する。
 
 ### 課題
-FizzBuzz問題のWeb APIをSpring Securityを使用してセキュア化しなさい。セキュリティ設定は以下の通りとする。
+FizzBuzz問題のWeb APIをSpring Securityを使用して認証を要求するように変更しなさい。設定内容は以下の通りとする。
 
 - /api/**はBasic認証を使用する。
-- ユーザ名: user
-- パスワード: password
-- 上記以外のエンドポイント(GraphQL)はセキュリティ設定を行わない。
+- ユーザ名: User
+- パスワード: P@ssword
+- 上記以外のエンドポイントでは認証を要求しない。
 
