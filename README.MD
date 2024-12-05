@@ -21,7 +21,7 @@ Open Closed Principleを適用し、拡張に対しては開かれているが�
 FizzBuzz問題のリファクタリングでリファクタリングしたFizzBuzzEngineを、Spring MVCを用いてWeb APIとして公開する。
 
 ### 課題
-FizzBuzz問題のリファクタリングでリファクタリングしたFizzBuzzEngineをWeb APIとして公開するFizzBuzzControllerを実装しなさい。FizzBuzzControllerは以下のエンドポイントを提供する。
+リファクタリングしたFizzBuzzEngineをWeb APIとして公開するFizzBuzzRestControllerを実装しなさい。FizzBuzzRestControllerは以下のエンドポイントを提供します。
 
 `GET /api/fizzbuzz/{number}`
 
@@ -41,10 +41,10 @@ FizzBuzz問題のリファクタリングでリファクタリングしたFizzBu
 
 ## 3. FizzBuzz問題のGraphQL化
 ### 説明
-FizzBuzz問題のリファクタリングでリファクタリングしたFizzBuzzEngineを、Spring for GraphQLを用いてGraphQLとして公開する。
+リファクタリングしたFizzBuzzEngineを、Spring for GraphQLを用いてGraphQLとして公開する。
 
 ### 課題
-FizzBuzz問題のリファクタリングでリファクタリングしたFizzBuzzEngineをGraphQLとして公開するFizzBuzzQueryを実装しなさい。FizzBuzzQueryは以下のクエリを提供する。
+FizzBuzzEngineをGraphQLとして公開するFizzBuzzGraphQLControllerを実装しなさい。FizzBuzzGraphQLControllerは以下のクエリを提供します。
 
 `fizzBuzz(number: Int!): String`
 - number: 整数値
